@@ -29,6 +29,7 @@ public class Test {
         System.out.println(myLinkedList.get(0));
 
         myLinkedList.remove(1);
+        
         System.out.println(myLinkedList);
 
     }
