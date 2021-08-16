@@ -1,7 +1,5 @@
-package LinkedList;
+package linkedList;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Test {
@@ -29,7 +27,7 @@ public class Test {
         System.out.println(myLinkedList.get(0));
 
         myLinkedList.remove(1);
-        
+
         System.out.println(myLinkedList);
 
     }
