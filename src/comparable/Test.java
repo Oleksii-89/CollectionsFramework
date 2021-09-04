@@ -15,10 +15,10 @@ public class Test {
     }
 
     private static void addElements(Collection collection){
-        collection.add(new Person(1, "Gala"));
-        collection.add(new Person(7, "Sergio"));
-        collection.add(new Person(3, "Natasha"));
-        collection.add(new Person(9, "Kola"));
+        collection.add(new Person(1, "Gala Jsllflsfk"));
+        collection.add(new Person(7, "Sergio Kks"));
+        collection.add(new Person(3, "Natasha Olkfk"));
+        collection.add(new Person(9, "Kola Kmslklksdgkjlksd"));
     }
 }
 
@@ -34,11 +34,22 @@ class Person implements Comparable<Person>{
         return name;
     }
 
+//    @Override
+//    public int compareTo(Person o) {
+//        if(this.id > o.getId()){
+//            return 1;
+//        } else if (this.id < o.getId()){
+//            return -1;
+//        }else {
+//            return 0;
+//        }
+//    }
+
     @Override
     public int compareTo(Person o) {
-        if(this.id > o.getId()){
+        if(this.name.length() > o.getName().length()){
             return 1;
-        } else if (this.id < o.getId()){
+        } else if (this.name.length() < o.getName().length()){
             return -1;
         }else {
             return 0;
